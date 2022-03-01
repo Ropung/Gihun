@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BlacklistedMeaningsByMeaning</key>
+	<dict/>
+	<key>SceneWhitelist</key>
+	<array>
+		<string>졸업식</string>
+		<string>수족관</string>
+		<string>음식</string>
+		<string>빙상 스케이트</string>
+		<string>산</string>
+		<string>절벽</string>
+		<string>농구</string>
+		<string>테니스</string>
+		<string>보석</string>
+		<string>치즈</string>
+		<string>소프트볼</string>
+		<string>미식축구</string>
+		<string>서커스</string>
+		<string>제트 스키</string>
+		<string>놀이터</string>
+		<string>회전 목마</string>
+		<string>페인트볼</string>
+		<string>윈드서핑</string>
+		<string>범선</string>
+		<string>일광욕</string>
+		<string>댐</string>
+		<string>벽난로</string>
+		<string>꽃</string>
+		<string>스쿠버</string>
+		<string>하이킹</string>
+		<string>고래류</string>
+		<string>부두</string>
+		<string>볼링</string>
+		<string>스노보딩</string>
+		<string>동물원</string>
+		<string>스노모바일</string>
+		<string>극장</string>
+		<string>보트</string>
+		<string>카지노</string>
+		<string>차</string>
+		<string>다이빙</string>
+		<string>자전거 타기</string>
+		<string>악기</string>
+		<string>보드 게임</string>
+		<string>성</string>
+		<string>일몰 일출</string>
+		<string>무술</string>
+		<string>모토크로스</string>
+		<string>잠수함</string>
+		<string>고양이</string>
+		<string>눈</string>
+		<string>카이트 보딩</string>
+		<string>스쿼시</string>
+		<string>간헐 온천</string>
+		<string>음악</string>
+		<string>양궁</string>
+		<string>사막</string>
+		<string>블랙잭</string>
+		<string>불꽃놀이</string>
+		<string>스포츠 카</string>
+		<string>고양잇과</string>
+		<string>축구</string>
+		<string>박물관</string>
+		<string>아기</string>
+		<string>펜싱</string>
+		<string>철로</string>
+		<string>나스카</string>
+		<string>스카이 서핑</string>
+		<string>새</string>
+		<string>게임</string>
+		<string>야구</string>
+		<string>마장 마술</string>
+		<string>스노클링</string>
+		<string>피라미드</string>
+		<string>연</string>
+		<string>나룻배</string>
+		<string>골프</string>
+		<string>수상스포츠</string>
+		<string>번개</string>
+		<string>협곡</string>
+		<string>대강당</string>
+		<string>밤 하늘</string>
+		<string>가라오케</string>
+		<string>스키</string>
+		<string>퍼레이드</string>
+		<string>숲</string>
+		<string>열기구</string>
+		<string>드래곤 퍼레이드</string>
+		<string>부활절 달걀</string>
+		<string>기념물</string>
+		<string>정글</string>
+		<string>추수감사절</string>
+		<string>기수</string>
+		<string>경기장</string>
+		<string>비행기</string>
+		<string>발레</string>
+		<string>요가</string>
+		<string>산호초</string>
+		<string>스케이트 타기</string>
+		<string>레슬링</string>
+		<string>자전거</string>
+		<string>문신</string>
+		<string>놀이 공원</string>
+		<string>카누</string>
+		<string>응원</string>
+		<string>탁구</string>
+		<string>낚시</string>
+		<string>마술</string>
+		<string>파충류</string>
+		<string>겨울 스포츠</string>
+		<string>폭포</string>
+		<string>기차</string>
+		<string>분재</string>
+		<string>서핑</string>
+		<string>개</string>
+		<string>케이크</string>
+		<string>썰매 타기</string>
+		<string>모래성</string>
+		<string>빙하</string>
+		<string>등대</string>
+		<string>승마</string>
+		<string>래프팅</string>
+		<string>해안</string>
+		<string>하키</string>
+		<string>산타클로스</string>
+		<string>포뮬러 원 자동차</string>
+		<string>스포츠</string>
+		<string>차량</string>
+		<string>권투</string>
+		<string>롤러 스케이팅</string>
+		<string>물속에서</string>
+		<string>오케스트라</string>
+		<string>축제</string>
+		<string>로켓</string>
+		<string>스케이트보드 타기</string>
+		<string>헬리콥터</string>
+		<string>공연</string>
+		<string>옥토버페스트</string>
+		<string>수구</string>
+		<string>스케이트 보드장</string>
+		<string>동물</string>
+		<string>나이트클럽</string>
+		<string>현악기</string>
+		<string>공룡</string>
+		<string>체조</string>
+		<string>크리켓</string>
+		<string>화산</string>
+		<string>호수</string>
+		<string>오로라</string>
+		<string>댄싱</string>
+		<string>콘서트</string>
+		<string>암벽 등반</string>
+		<string>행글라이더</string>
+		<string>로데오</string>
+		<string>물고기</string>
+		<string>예술</string>
+		<string>오토바이</string>
+		<string>배구공</string>
+		<string>웨이크보딩</string>
+		<string>배드민턴</string>
+		<string>모터 스포츠</string>
+		<string>스모</string>
+		<string>파라세일링</string>
+		<string>스카이다이빙</string>
+		<string>킥복싱</string>
+		<string>피냐타</string>
+		<string>푸즈볼</string>
+		<string>고카트</string>
+		<string>포커</string>
+		<string>카약</string>
+		<string>수영</string>
+		<string>Atv</string>
+		<string>해변</string>
+		<string>다트판</string>
+		<string>육상 경기</string>
+		<string>캠핑</string>
+		<string>토네이도</string>
+		<string>당구</string>
+		<string>럭비</string>
+		<string>에어쇼</string>
+	</array>
+</dict>
+</plist>

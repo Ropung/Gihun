@@ -1,0 +1,162 @@
+@charset "utf8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family:'MaruBuri','D2coding';
+}
+
+
+#logoBox{   /*로고박스*/
+    text-align: center;
+}
+
+#body{
+    width: 100%;
+    margin: auto;
+}
+
+#header{
+    width: 100%;
+    height: 480px;
+    background-image:url("images/cof.jpg")
+    
+}
+
+#navi{ /*네비 박스*/
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+#menu{  /*네비박스 ul*/
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.main{ /*네비박스 메뉴리스트 하나의 속성li*/
+    float: left;
+    width: 20%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .3s;
+    position: relative;
+    background-color: black;
+}
+
+.main::after{
+    content: "";
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 7px;
+    transition: .3s;
+}
+
+.main:hover::after{
+    width: 100%;
+}
+
+
+.main:hover{
+    background-color: cornflowerblue;
+}
+
+
+.subMenu{  /*서브메뉴 ul*/
+    display: none;
+    list-style: none;
+    padding: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.sub{
+    color: white;
+    background:black;
+}
+
+.sub:hover{
+    background-color:cornflowerblue;
+    color: black;
+}
+
+.main:hover .subMenu {
+    display: block;
+    color: black;
+}
+
+
+#sec1{
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+}
+
+.sectionul{
+    list-style: none;
+    padding: 0%;
+    margin: 10px;
+
+}
+
+.sectionli{
+    overflow:hidden;
+    float: left;
+    width: calc((100% - 60px)/4);
+    margin: 0 20px 20px 0;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.sectionli:nth-child(4n){
+    margin-right: 0;
+
+}
+
+.sectionli > img{
+    width: 100%;
+    display: block;
+}
+
+.caption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+    top: 0%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.sectionli:hover .caption{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.caption div{
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+footer{
+    clear: both;
+}

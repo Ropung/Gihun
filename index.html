@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+    <meta charset="utf-8"/>
+  
+    <title>Travel Publisher Task</title>    <!-- 타이틀 제목 -->
+
+    <!-- 외부 스타일 시트CSS , JS-->
+    <link href="index.css" rel="stylesheet"/>
+    <script src="index.js"></script>
+  
+</head>
+<body onload="playSlide(); change();"  >
+
+
+<!-- 네비 첫번쨰 줄 -->
+<div id="navTopBox">
+    <div class="navbox">
+    <nav >
+        <ul id="menutop">
+            <li class="maintop"><a href="#"> 로그인 </a></li>
+            <li class="maintop"><a href="#"> 회원가입 </a></li>
+            <li class="maintop"><a href="#"> 예약/결제</a></li>
+            <li class="maintop"><a href="#"> 단체문의</a></li>
+            <li class="maintop"><a href="#"> 고객센터</a></li>
+        </ul>
+    </nav>
+    </div>
+</div>
+
+<!-- 네비 두번째줄 -->
+   
+            <div id="navOutBox">
+                        <!-- 로고 -->
+                        <div class="navbox">
+                        <div id="Logobox">
+                            <a href="index.html"><img src="images/logo.gif" alt="로고" id="logo"></a>
+                        </div>
+                            <!-- 네비 -->
+                        <nav id>
+                            <ul id="menu">
+                                <li class="main"><a href="#"> 국내</a></li>
+                                <li class="main"><a href="#"> 해외</a></li>
+                                <li class="main"><a href="#"> 컨셉</a></li>
+                                <li class="main"><a href="#"> 가성비</a></li>
+                                <li class="main"><a href="#"> 프리미엄</a></li>
+                                <li class="main"><a href="#"> 렌트</a></li>
+                            </ul>
+                        </nav>
+                        </div>
+                    </div>
+        
+<!--헤더 영역 -->
+
+
+<header id="header" onmouseover="stopSlide()" onmouseout="playSlide()">
+
+
+    
+    <div id="slideBox">
+    <img class="slide" src="images/Tr1.jpeg" alt="헤더이미지1" >
+    <img class="slide" src="images/Tr2.jpeg" alt="헤더이미지2" >
+    <img class="slide" src="images/Tr3.jpeg" alt="헤더이미지3" >
+   </div>
+   
+    <div class="headernav left" onclick="slide(-1)">&langd;</div>
+    <div class="headernav right" onclick="slide(1)">&rangd;</div>
+
+    <div id="circleBox">
+        <div class="circle" onclick="circle(0)"></div>
+        <div class="circle" onclick="circle(1)"></div>
+        <div class="circle" onclick="circle(2)"></div>
+    </div>
+    
+
+    <div class="headertext" style="display: block;">
+        <h1 >바로 지금! <p>겨울로 떠나요</p></h1>
+        <h4 >겨울이 얼마남지 않았어요! 리조트에서 엑티비티한 활동을 즐겨보세요 </p></h4>
+        <button class="headerbtn" >더보기</button>
+    </div>
+    <div class="headertext" style="display: none;" >
+        <h1 >연인과 함께하는 허니문</h1>
+        <h4 >특별한 곳에서 나누는 사랑은  더욱 특별할거에요</h4>
+        <button class="headerbtn">더보기</button>
+    </div>
+    <div class="headertext" style="display: none;" >
+        <h1 >새로운 여행지 </h1>
+        <h4 >가슴 벅찬 엑티비티를 경험해보세요!  </h4>
+        <button class="headerbtn">더보기</button>
+    </div>
+
+</header>
+
+
+
+
+<h2 class="sectheme">새소식</h2>
+<div>
+<section class="SecTitle">
+    
+        <ul class="menuL">
+        <h3>Notice<span id="Sectitlebold">더보기</span></h3>
+        <li class="mainL"><a href="#"> [공지사항] 코로나로인한 출발지체</a><span id="colorgray">new</span></li>
+        <li class="mainL"><a href="#"> [공지사항] 가격변동으로인한 몇몇 여행지 가격인상</a><span id="colorgray">22.02.01</span></li>
+        <li class="mainL"><a href="#"> [이벤트] 백신을 맞으면 여행비가 반값!!??</a><span id="colorgray">22.01.29</span></li>
+        <li class="mainL"><a href="#"> [당첨발표] 여행가서 살빼자 이색 트레블 다이어트 당첨자공개!</a><span id="colorgray">22.01.18</span></li>
+        <li class="mainL"><a href="#"> [긴급] 날씨로 인한 항공사 오류안내</a><span id="colorgray">22.01.14</span></li>
+        <li class="mainL"><a href="#"> [이벤트]제 4회 여행러는 나야나! 나야나!</a><span id="colorgray">22.01.13</span></li>
+    </ul>
+
+    <ul class="menuR">
+        <h3>NEWS<span  id="Sectitlebold">더보기</span></h3>
+        <li class="mainR"><a href="#"> 국내 대축제 이번 년도는 어떤 축제가 있을까 ??</a><span id="colorgray">new</span></li>
+        <li class="mainR"><a href="#"> 해외로가면 어떤 놀꺼리가 있을까??</a><span id="colorgray">new</span></li>
+        <li class="mainR"><a href="#"> 여행 필수 아이템 구매는 어디서???</a><span id="colorgray">new</span></li>
+        <li class="mainR"><a href="#"> 일교차 큰나라 가기전에 꼭 확인해야할 사항!</a><span id="colorgray">22.01.01</span></li>
+        <li class="mainR"><a href="#"> 범죄방지 꼭꼭 명심해야할 3가지 리스트</a><span id="colorgray">22.01.22</span></li>
+        <li class="mainR"><a href="#"> 여행 필수 준비물 그게뭔데 ?</a><span id="colorgray">22.02.04</span></li>
+    </ul>
+</div>
+
+</section>
+
+
+
+
+<h2 class="sectheme">인기 테마 </h2>
+
+<section class="sectionA">
+        <ul class="meunA">
+        <li class="mainA">
+            <img class="img" src="images/secA1.jpeg" alt="네덜란드">
+            <div class="captionsee">
+                    <h3>여유</h3>
+                    <h5>890,200원~</h5>
+                  
+            </div>
+
+            <div class="caption">
+                <h3>네덜란드</h3>
+                <p>가끔은 정신없는 여행보단 여유롭게 주변을 둘러보면 어떨까요? 네덜란드에서 여유를 즐겨보세요!</p>
+                <p>가격 : 890,200원~</p>
+                <button class="captionbtn">자세히</button>
+            </div>
+
+        </li>
+
+        <li class="mainA">
+            <img class="secimg" src="images/secA2.jpeg" alt="오사카">
+            
+            <div class="captionsee">
+                <h3>가성비</h3>
+                    <h5>570,200원~</h5>
+            
+        </div>
+            
+            <div class="caption">
+                    <h3>오사카</h3>
+                    <p>교통이 싸고 물가도 한국과 비슷한 그곳 우리나라 문화와 비슷한 일본으로 떠나보는건 어떨까요 ?</p>
+                    <p>가격 : 570,200원~</p>
+                    <button class="captionbtn">자세히</button>
+            </div>
+        </li>
+
+        <li class="mainA">
+            <img class="secimg" src="images/secA3.jpeg" alt="파리">
+            
+            <div class="captionsee">
+                <h3>편안함</h3>
+                <h5>990,800원~</h5>
+        </div>
+
+            <div class="caption">
+                    <h3>파리</h3>
+                    <p>사진으로만 봤던 감동 이제는 직접 느껴볼시간 이번기회에 새로운 경험을 해보세요 !</p>
+                    <p>가격 : 990,800원~</p>
+                    <button class="captionbtn">자세히</button>
+            </div>
+        </li>
+
+        <li class="mainA">
+            <img class="secimg" src="images/secA4.jpeg" alt="몰디브">
+           
+            <div class="captionsee">
+                <h3>휴식</h3>
+                <h5>1,010,100원~</h5>
+        </div>
+
+            <div class="caption">
+                    <h3>몰디브</h3>
+                    <p>몰디브가서 모히또 한잔의 여유 바쁜 당신에게 휴식을 선물하세요!</p>
+                    <p>가격 : 1,010,100원~</p>
+                    <button class="captionbtn">자세히</button>
+            </div>
+        </li>
+    </ul>
+</section>
+
+
+<h2 class="sectheme">여행지 후기 </h2>
+
+<!--  섹션 B    B로 바꾸고 3칸 조절하기-->
+
+
+<section class="sectionB"  >
+
+       
+        <ul class="meunB">
+            
+        <li class="mainB">
+            <h2>영상</h2><span>더보기</span>
+            <iframe id="video" width="560" height="220px" src="https://www.youtube.com/embed/p_Ue-nDJLMY?controls=1&autoplay=1&loop=1&autohide=1&mute=1&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <h3>Video</h3>
+            <p>여행지의 감성을 생생하게 느껴요</p>
+        </li>
+
+
+        <li class="mainB">
+            <h2>공유 갤러리</h2><span>더보기</span>
+            <img class="secimg" id="secBimg" src="images/secB01.jpeg" alt="오사카">
+            <h3>Poto</h3>
+            <p>사진으로 느낄수있는 감성</p>
+        </li>
+
+        <li class="mainB">
+            <h2>축제</h2><span>더보기</span>
+            <img class="secimg" id="secCimg" src="images/secC01.jpeg" alt="파리">
+            <h3>festival</h3>
+            <p>축제일정을 확인하고 다양한 문화를 즐겨보세요!</p>
+        </li>
+    </ul>
+</section>
+
+
+<!-- 섹션 바텀  -->
+<section class="sectionBottom">
+    <div class="mainBottom"></div>
+
+</section>
+
+<!--  footer 영역 -->
+<footer>
+    <div id="footerA">
+            <p id="footercontain">
+                <a>회사소개</a> |
+                <a>이용약관</a> |
+                <a>개인정보처리방침</a> |
+                <a>사업자 정보확인</a> |
+                <a>하이뉴 마케팅센터</a> |
+                <a>액티비티 호스트센터</a> |
+                <a>HOTEL 하이뉴</a> |
+                <a>HOTEL 콘텐츠산업진흥법에의한 표시</a> |
+              </p>
+        
+    <div id="divA"><span>고객행복센터 1994-0827</span> 오전 9시 - 새벽 3시</div>
+
+    <div>(주) 하이뉴 컴퍼니</div>
+    <div>주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층</div>
+    <div>대표이사 : 노기훈 | 사업자등록번호: 123-44-55667</div>
+    <div>전화번호 : 010-9593-5676</div>
+    <div>전자우편주소 : 563710@naver.com.</div>
+</div>
+
+</footer>
+
+
+
+
+</body>
+</html>

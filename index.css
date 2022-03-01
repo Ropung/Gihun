@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+
+*{    /*전체 설정*/
+    box-sizing: border-box;
+    margin: auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+    outline: 0;
+}
+
+
+
+#navTopBox {      /*네비탑 박스 영역 */
+  width : 100%;
+  height : 30px;
+  position: fixed;
+  background: black;
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.navbox{/*네비 박스2 영역 */
+  width : 90%;
+  height : 20px;
+}
+#menutop{     /*탑 메뉴 영역*/
+  width: 50%;
+  float: right;
+  list-style: none;
+  padding: 0;
+  /* border: 1px solid blue; */
+  line-height: 25px;
+}
+
+
+.maintop{     /*메인 탑 정렬*/
+  float: left;
+  width : calc(100% / 5) ;
+  border: none;
+  position: relative;
+  
+}
+.maintop::after{ /*list 밑줄 효과 설정*/
+  content: "";
+  background: white;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height:  2px;
+  transition: .3s;
+}
+
+.maintop:hover::after{  /*list 효과*/
+  width: 50%;
+}
+
+.maintop > a {   /*메뉴탑 A 태그 글자 효과*/
+  font-size: 0.6rem;
+  color: white;
+  text-decoration: none; 
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.maintop>a:hover {
+  font-weight: bold;
+}
+
+/*  전체 네비 메뉴 */
+#navOutBox {/*네비 영역 고정*/
+   position : fixed;
+   top : 30px;
+   left : 0;
+  width : 100%;
+  background : white;
+  box-shadow : 0 1 px 1 px rgba(0, 0, 0, .3);
+  z-index:100;
+ 
+}
+
+
+
+
+#Logobox {/*로고 왼쪽 정렬*/
+  padding: 10px 0 0 20px;
+  width : 20%;
+  float : left;
+  /* border: 1px solid red; */
+}
+#menu {/*ul 메뉴 전채영역 설정  우측 정렬*/
+  width : 80%;
+  float : right;
+  list-style : none;
+  padding : 0%;/*글머리 제거및 여백 제거*/
+  line-height : 80px;/*자간 높이 설정*/
+}
+
+
+.main {/*list 영역 설정*/
+float : left;
+width : calc(100% / 6) ;
+border: none;
+position: relative;
+/* border: 1px solid red; */
+}
+
+
+
+.main::after{ /*list 밑줄 효과 설정*/
+  content: "";
+  background: rgba(255, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height:  2px;
+  transition: .3s;
+}
+
+.main:hover::after{  /*list 효과*/
+  width: 100%;
+  
+}
+
+.main > a {   /*메뉴 A 태그 글자 효과*/
+  color: #000;
+  text-decoration: none; 
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .3s;
+
+}
+
+.main>a:hover {
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+
+
+/* 헤더 영역 */
+
+
+#header{
+  width: 100%;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+}
+
+#slideBox{
+  width: 300%;
+  display: flex;
+  transition: 1s;
+}
+
+.slide{
+  display: block;
+  width: calc(100%/3);
+  /* overflow: hidden; */
+  /* background-size: contain; */
+}
+
+
+/* 네비영역 */
+.headernav {
+  color:#fff; 
+  font-size:10rem; 
+  width:50%; 
+  height:100%;
+  text-shadow:3px 3px 3px rgba(0,0,0,.3);
+  position:absolute; top:0;
+  display: flex; align-items: center;
+  cursor:pointer; opacity:0; transition: .5s;
+  z-index:5
+}
+
+.headernav:hover { opacity:.7 }
+.left { left: 0; justify-content: flex-start }
+.right { right: 0; justify-content: flex-end }
+
+
+#circleBox {   /* 상단 서클버튼 박스*/
+  position: absolute; top:90%; left:50%;
+  transform:translateX(-50%);
+  display: flex; justify-content: center;
+  padding:10px; border-radius:20px;
+  background:rgba(0,0,0,.5);
+  z-index:5
+}
+.circle {   /*각 서클 버튼*/
+  width:10px; height:10px; margin-right:10px;
+  background:rgba(255,255,255,.6);
+  border-radius:50%;
+  cursor:pointer; transition:.5s
+}
+.circle:first-child { background-color:#fff; transform:scale(1.4) }
+.circle:last-child { margin-right:0 }
+
+
+.headertext {    /*슬라이드 제목 텍스트*/
+  width:100%;
+  position:absolute; 
+  top:50%; transform:translateY(-50%);
+  text-align:center;
+  color:#fff; text-shadow:0 0 5px rgba(0,0,0,.3);
+  font-size:2em;
+  animation: fromBottom 1s .7s both;
+  display:none; z-index:1;
+}
+
+.headertext h4{
+  width: 80%;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+
+@keyframes fromBottom {   /*제목 문자용 애니메이션*/
+  from { transform:translateY(0); opacity:0 }
+  to { transform:translateY(-50%); opacity:1 }
+}
+
+
+
+@media screen and (max-width:800px) {
+ .nav { font-size:4rem }
+ .text { font-size:1.5rem }
+}
+
+@media screen and (max-width:500px) {
+ .nav { font-size:3rem }
+ .text { font-size:1rem }
+}
+
+
+.headerbtn{
+ 
+  background: rgba(0, 0, 0, .3);
+  color: white;
+  border: none;
+  margin: 50px 10px 20px 10px;
+  padding: 10px 20px;
+  transition: .3s;
+  font-size: 1.2rem;
+  animation: headerani 1s .5s backwards ;
+  z-index: 9;
+}
+
+.headerbtn:hover{
+  color: black;
+  border: none;
+  background: white;
+}
+
+
+@keyframes headerani{
+  from{transform: translateY(50%); opacity: 0;}
+  to{transform: translateY(0); opacity: 1;}
+}
+
+
+
+
+
+/* 섹션 title 영역  */
+
+.SecTitle{
+  display: block;
+  width: 90%;
+}
+
+.SecTitle > ul{
+  width : calc((100% - 50px) / 2) ;
+  border: 2px dashed #999;
+  list-style: none;
+  padding: 20px;
+  margin: 10px 0 10px 0;
+}
+
+
+
+.SecTitle a{
+    display: block;
+    color: black;
+    width: 50%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    transition: .3s;
+}
+
+.SecTitle a:hover{
+  color: orange;
+}
+
+.mainL , .mainR {
+  line-height: 30px;
+  clear: both;
+ 
+}
+
+#colorgray{
+  color: #999;
+}
+
+.menuL{
+  float: left;
+
+}
+
+.menuR{
+  float: right;
+
+}
+
+
+.SecTitle a{
+  float: left;
+}
+
+
+.SecTitle span{
+  float: right;
+}
+
+#Sectitlebold:hover{
+  color: orange;
+  font-weight: bold;
+}
+
+
+.menuL > a {
+  text-decoration: none;
+  color: black;
+}
+.menuR > p {
+
+}
+
+
+
+/* 섹션 타이틀 영역 */
+section{
+  clear: both;
+  overflow: auto;
+}
+
+
+.sectheme{
+  clear: both;
+  margin:30px 0 20px 20px;
+  overflow: auto;
+}
+
+
+/* 섹션  A       영역 */
+.menuA{
+  clear: both;
+  list-style: none;
+  width: 1200px;
+  padding: 0%;
+  border: 1px solid red;
+  margin: 0;
+}
+
+.mainA{
+  position: relative;
+  float: left;
+  width:calc((100% - 100px)/4);
+  height: 300px;
+  margin-left: 0;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.mainA:last-child{
+  margin-right: 0;
+}
+
+.secimg{
+  width: 100%;
+}
+
+.captionsee{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 80%;
+  text-align: center;
+  opacity: 1;
+  transition: .3s;
+  color: #fff;
+padding-top: 5px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.caption{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  top: 0;
+  opacity: 0;
+  transition: .3s;
+  line-height: 1.1rem;
+}
+
+.captionbtn{
+  bottom: 0%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  margin: 50px 10px 20px 10px;
+  padding: 10px 20px;
+  transition: .3s;
+  font-size: 1.2rem;
+  opacity: 0;
+}
+
+
+.caption p {
+  margin-top: 20px;
+  width: 80%;
+  font-size: .8rem;
+}
+
+
+
+.mainA:hover .caption {
+  color: white;
+  cursor: pointer;
+  opacity: 1;
+}
+.mainA:hover .captionsee {
+  opacity: 0;
+}
+.mainA:hover .captionbtn {
+  animation: headerani 2s .5s backwards ;
+  opacity: 1;
+}
+
+
+
+/* 섹션 B  */
+
+.sectionB{
+  width: 100%;
+  padding: 30px 0 30px 0 ;
+  background: rgba(210, 210, 210, 0.4);
+}
+
+.menuB{
+  list-style: none;
+  width: 1200px;
+  padding: 0%;
+  margin: 0;
+}
+
+.mainB{
+  position: relative;
+  float: left;
+  width:calc((100% - 80px)/3);
+  
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.mainB h2 {
+  width: 80%;
+  float: left;
+  margin-left: 0;
+}
+
+
+
+.mainB span{
+  width: 20%;
+  float: right;
+  margin-right: 0;
+}
+
+
+.mainB span:hover{
+  color: orange;
+  font-weight: bold;
+}
+
+.mainB:last-child{
+  margin-right: 0;
+}
+
+#video  {
+  width: 100%;
+}
+
+.mainB img {
+  width: 100%;
+  height: 220px;
+}
+
+
+
+
+.sectionBottom{
+  width: 100%;
+  height: 164px;
+  background: url(images/secBottom1.jpeg);
+}
+
+.mainBottom{
+  height: 100%; width: 100%;
+  cursor: pointer;
+}
+
+
+footer{
+  clear: both;
+  overflow: auto;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: relative;
+  height: 300px;
+  line-height: 1.5rem;
+}
+
+#footerA{
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  color: gray;
+}
+
+#footerA span{
+  font-weight: bold;
+}
+
+#footercontain{
+  display: block;
+    color: gray;
+    width: 70%;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#footercontain a{
+  color: gray;
+  font-weight: bold;
+}
+
+#footercontain a:hover{
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+
+#divA{
+  margin: 30px 0 30px 0;
+}
+
+
